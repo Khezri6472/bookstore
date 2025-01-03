@@ -1,0 +1,17 @@
+{% extends  '_base.html' %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
+{% block page_title %}
+	لیست کتاب ها
+{% endblock %}
+
+{% block content %}
+    {% for book in book_list %}
+    	<h3>{{ book.title }}</h3>
+    {% endfor %}
+    
+{% endblock content %}
+
+
+
+
