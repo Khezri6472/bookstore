@@ -12,6 +12,7 @@
     	<p>{{ book_detail.price }}</p>
     <br>
         <a href="{% url 'book_list' %}" class="btn btn-sm btn-success">برگشت</a>
+        <a href="{% url 'book_delete' book_detail.id %}" class="btn btn-sm btn-danger">حذف کتاب</a>
 
 
 {% endblock content %}

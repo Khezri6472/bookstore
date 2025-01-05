@@ -12,6 +12,8 @@
         <a href="{{book.get_absolute_url}}" class="btn btn-sm btn-success">ادامه مطلب</a>
 
         <a href="{% url 'book_create' %}" class="btn btn-sm btn-success">کتاب جدید</a>
+        <a href="{% url 'book_update' book.id %}" class="btn btn-sm btn-warning">ویرایش کتاب</a>
+
     {% endfor %}
     
 {% endblock content %}
